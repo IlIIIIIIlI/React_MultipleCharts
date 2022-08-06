@@ -1,13 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import YearStruct from './components/YearStruct';
+import Records from './components/Records';
+import TotalPrice from './components/TotalPrice';
+import UnitPrice from './components/UnitPrice';
+import HouseArea from './components/HouseArea';
+import PplAttention from './components/PplAttention';
+import PostTime from './components/PostTime';
+import Interesting from './components/Interesting';
+import NotInteresting from './components/NotInteresting';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Records />
+      <YearStruct />
+      <UnitPrice />
+      <TotalPrice />
+      <HouseArea />
+      <PplAttention />
+      <PostTime />
+      <Interesting />
+      <NotInteresting />
+    </BrowserRouter>
+
   </React.StrictMode>
 );
 

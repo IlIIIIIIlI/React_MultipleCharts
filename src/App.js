@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Chart from "react-apexcharts";
 import "./App.css";
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
+
   const [state, setState] = useState({
     options: {
       colors: ["#E91E63", "#FF9800"],
@@ -114,7 +116,7 @@ function App() {
         </div>
         <div className="col-4">
           <Chart
-            options={state2.options}ss
+            options={state2.options} ss
             series={state2.series}
             type="radar"
             width="450"
